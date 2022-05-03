@@ -9,5 +9,5 @@ the chances of getting and unpredictable result is high.
 ##How it works
 from this code, the user is told to input an integer,
 the computer then returns 4 values that when added, sums up to the original input from the user
-
+</br>
 if Done repeatedly, one would notice how the computer returns different for the same input
