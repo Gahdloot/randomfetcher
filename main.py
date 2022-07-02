@@ -1,10 +1,9 @@
 import random
 
-hii = []
-
 
 #this Function splits the user input and use them to generate its figures
 def RanGenrator(x):
+    Predicted_Values = []
     l = x // 2
     b = random.randint(1, l)
     xr = l - b
@@ -13,10 +12,11 @@ def RanGenrator(x):
     d = random.randint(0, xr)
     o = b + c + d
     i = x - o
-    hii.append(b)
-    hii.append(c)
-    hii.append(d)
-    hii.append(i)
+    Predicted_Values.append(b)
+    Predicted_Values.append(c)
+    Predicted_Values.append(d)
+    Predicted_Values.append(i)
+    return Predicted_Values
     #print(f'your numbers are {b},{c},{d},{i} which make up {x}')
 
 
@@ -28,10 +28,8 @@ def RanGenrator(x):
 
 
 try:
-    rr = int(input('Enter a random number from 20 - 100 : '))
-    RanGenrator(rr)
-    print(hii)
-    print(f'That Makes up {rr}')
+    input_value = int(input('Enter a random number from 20 - 100 : '))
+    print(f'{RanGenrator(input_value)} Are Random numbers that make up {input_value}')
 
 except ValueError :
     print('Invalid Input Try Again')
@@ -39,4 +37,3 @@ except ValueError :
 
 except IndexError:
     print('ouch!! code crash try again!!!')
-
