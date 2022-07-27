@@ -27,7 +27,7 @@ def RanGenrator(x):
 
 
 
-try:
+'''try:
     input_value = int(input('Enter a random number from 20 - 100 : '))
     print(f'{RanGenrator(input_value)} Are Random numbers that make up {input_value}')
 
@@ -36,4 +36,4 @@ except ValueError :
 
 
 except IndexError:
-    print('ouch!! code crash try again!!!')
+    print('ouch!! code crash try again!!!')'''
